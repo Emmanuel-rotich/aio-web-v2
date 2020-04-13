@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aio Vendor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+
+    <section id="header" class="header">
+        <div class="header-title">
+            <h1>AIO Vendor Shop</h1>
+            <p>Your All In One Premium Accounts Solution</p>
+        </div>
+
+        <!--Navigation-->
+        <nav class="nav">
+            <label for="toggle"><i class="fas fa-bars fa-2x"></i></label>
+            <input type="checkbox" id="toggle" />
+            <div class="menu">
+                <a href="#header">HOME</a>
+                <a href="#howItWorks">HOW IT WORKS</a>
+                <a href="https://shoppy.gg/@aiovendor/feedback" target="_blank">FEEDBACK</a>
+                <a href="#termsOfUse">TERMS</a>
+                <a href="#contactUs">CONTACT US</a>
+            </div>
+        </nav>
+
+        <!--Filter Control buttons-->
+        <div id="myFilterBtn" class="filter-btn-container">
+            <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+            <button class="filter-btn" onclick="filterSelection('education')"> Education</button>
+            <button class="filter-btn" onclick="filterSelection('vpn')"> VPN Accounts</button>
+            <button class="filter-btn" onclick="filterSelection('stream')"> Streaming</button>
+            <button class="filter-btn" onclick="filterSelection('software')"> Softwares</button>
+            <button class="filter-btn" onclick="filterSelection('adult')"> Adult 21+</button>
+        </div>
+
+    </section>
+
+    <!--Products-->
+    <section class="products">
+        <div class="item filterDiv education">
+            <div class="item-thumbnail">
+                <img src="img/grammarly-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Grammarly premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Grammarly</p>
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Grammarly</h3>
+                    <div class="hl"></div>
+                    <p>Grammarly automatically detects grammar, spelling, punctuation, word choice and style mistakes in your writing. It's easy to use: ... Grammarly's algorithms flag potential issues in the text and suggest context-specific corrections
+                        for grammar, spelling and usage, wordiness, style, punctuation, and even plagiarism.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$2</span> <a href="" class="buy-btn" data-shoppy-product="UkeHCHA">BUY</a></li>
+                        <li> 3 Month Warranty <span>$4</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$7</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv education">
+            <div class="item-thumbnail">
+                <img src="img/turnitin-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Turnitin premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span  class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Turnitin</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-out">SOLD OUT</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal2" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Turnitin</h3>
+                    <div class="hl"></div>
+                    <p>Turnitin is an originality checking and plagiarism prevention service that checks your writing for citation mistakes or inappropriate copying. When you submit your paper, Turnitin compares it to text in its massive database of student
+                        work, websites, books, articles, etc.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$3</span> <a href="" class="buy-btn" data-shoppy-product="qTFgz2F">BUY</a></li>
+                        <li> 3 Month Warranty <span>$5</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$10</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv vpn">
+            <div class="item-thumbnail">
+                <img src="img/nordvpn-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your NordVPN premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>NordVPN</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>NordVPN</h3>
+                    <div class="hl"></div>
+                    <p>NordVPN protects you by securing your internet traffic with cutting-edge technologies. It ensures strong and reliable encryption between your device and a remote server. NordVPN apps use the OpenVPN and IKEv2/IPSec protocols to guarantee
+                        the ultimate protection of your sensitive data.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> Validity 2023 <span>$4</span> <a href="" class="buy-btn" data-shoppy-product="sfvlQ9v">BUY</a></li>
+                        <li> Validity 2022 <span>$3</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> Validity 2021 <span>$1.5</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv stream">
+            <div class="item-thumbnail">
+                <img src="img/netflix-logo-white-background.jpg" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Netflix premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Netflix</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Netflix</h3>
+                    <div class="hl"></div>
+                    <p>Netflix is a streaming service that allows our members to watch a wide variety of award-winning TV shows, movies, documentaries, and more on thousands of internet-connected devices. With Netflix, you can enjoy unlimited ad-free viewing
+                        of our content.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$2</span> <a href="" class="buy-btn" data-shoppy-product="xs93Ur0">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv education">
+            <div class="item-thumbnail">
+                <img src="img/chegg-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Chegg premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Chegg</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Chegg</h3>
+                    <div class="hl"></div>
+                    <p>Chegg, Inc., known as Chegg, is an American education technology company based in Santa Clara, California, with over three million subscribers. Chegg provides digital and physical textbook rentals, online tutoring, and other student
+                        services.
+                    </p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv education">
+            <div class="item-thumbnail">
+                <img src="img/coursehero-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Coursehero premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Coursehero</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-out">SOLD OUT</h3>
+                </div>
+            </div>
+
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Coursehero</h3>
+                    <div class="hl"></div>
+                    <p>Course Hero is an online learning platform where you can access more than 20 million course-specific study resources contributed by students and educators. Our vision is to help every student graduate confident and prepared, and we
+                        believe that can happen if every student has access to the right resources.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv education">
+            <div class="item-thumbnail">
+                <img src="img/udemy-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Udemy premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Udemy</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Udemy</h3>
+                    <div class="hl"></div>
+                    <p>Udemy is a great learning portal that provides affordable lessons for anyone with an Internet connection.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv stream">
+            <div class="item-thumbnail">
+                <img src="img/new_dstv_logo.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your DSTV premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>DSTV</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>DSTV</h3>
+                    <div class="hl"></div>
+                    <p>DStv (Digital Satellite Television) is the biggest satellite pay TV operator in Africa. Their product is called DStv. </p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv software">
+            <div class="item-thumbnail">
+                <img src="img/kaspersky-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Kaspersky premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Kaspersky</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-out">SOLD OUT</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Kaspersky</h3>
+                    <div class="hl"></div>
+                    <p>Kaspersky Anti-Virus features include real-time protection, detection and removal of viruses, trojans, worms, spyware, adware, keyloggers, malicious tools and auto-dialers, as well as detection and removal of rootkits. It also includes
+                        instantaneous automatic updates via the "Kaspersky Security Network" service.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item filterDiv stream">
+            <div class="item-thumbnail">
+                <img src="img/spotify-thumb.png" alt="">
+            </div>
+            <button class="copy btn-share-container" data-clipboard-text="Hey, get your Spotify premium account at https://aiovendor.me" onclick="copyPopup()">
+                <span class="popuptext myPopup">Link copied</span>
+                <i class="fas fa-share-alt" style="color:black"></i>
+            </button>
+            <div class="item-title">
+                <p>Spotify</p>
+
+            </div>
+            <div class="dropup">
+                <span class="btn-actions-container">
+                    <i class="fas fa-info"></i>
+                </span>
+                <div class="dropup-content">
+                    <h3 class="status status-in">IN STOCK</h3>
+                </div>
+            </div>
+            <span class="btn-purchase-container purchaseBtn">Buy</span>
+            <!--purchase modal-->
+            <div id="purchaseModal" class="modal">
+                <!--modal-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Spotify</h3>
+                    <div class="hl"></div>
+                    <p>Spotify is a digital music, podcast, and video streaming service that gives you access to millions of songs and other content from artists all over the world.</p>
+                    <ul class="links" style="list-style: none;">
+                        <li> 1 Month Warranty <span>$5</span> <a href="" class="buy-btn">BUY</a></li>
+                        <li> 3 Month Warranty <span>$15</span><a href="" class="buy-btn">BUY</a></li>
+                        <li> 6 Month Warranty <span>$25</span><a href="" class="buy-btn">BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="contact-container">
+        <p>Account or Service Not Listed? <span> <a href="mailto:hello@aiovendor.me">Talk to Us</a></span></p>
+    </section>
+
+    <!--Footer-->
+    <section class="footer-container">
+        <div class="footer">
+            <div id="howItWorks" class="how">
+                <h3>HOW IT WORKS</h3>
+                <ol class="how-list">
+                    <li>Upon purchase you will receive email from shoppy in this format- email:password</li>
+                    <li>Accounts are VERY HIGH QUALITY & PRIVATE (not from public sources)</li>
+                    <li>INSTANT DELIVERY!</li>
+                </ol>
+            </div>
+            <div id="termsOfUse" class="terms">
+                <h3>OUR TERMS</h3>
+                <ul class="terms-list">
+                    <li>You have 24h warranty to report that your account isn't working</li>
+                    <li>Do not change the details of the accounts. Otherwise your warranty will be void</li>
+                    <li>If there is any problem with your purchase make sure you contact us before leaving a bad feedback. Thanks!</li>
+
+                </ul>
+            </div>
+            <div id="contactUs" class="connect">
+                <h3>LET'S CONNECT</h3>
+                <ul class="connect-list">
+                    <li class="discord-ctn"><a href="" target="_blank"><i class="fab fa-discord fa-2x"></i></a></li>
+                    <li class="telegram-ctn"><a href="" target="_blank"><i class="fab fa-telegram-plane fa-2x"></i></a></li>
+                    <li class="twitter-ctn"><a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                </ul>
+            </div>
+    </section>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <script src="https://shoppy.gg/api/embed.js"></script>
+    <script src="https://shoppy.gg/api/embed.js"></script>
+    <script src="https://shoppy.gg/api/embed.js"></script>
+
+</body>
+
+</html>

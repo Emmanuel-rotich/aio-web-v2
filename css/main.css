@@ -1,0 +1,496 @@
+:root {
+    --primary-color: #0c2233;
+    --button-color: #0a91ab;
+    --button-hover-color: #00A8E8;
+    --secondary-color: #065471;
+    --ascent-color: #00171F;
+    --alt-color: #FFFFFF;
+    --items-bg-color: #ffc045;
+    --highlight-color: #5CFF5C;
+    --footer-bg-color: #d3a03b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--ascent-color);
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0 auto;
+    background-color: var(--items-bg-color);
+    text-align: center;
+}
+
+.header-title {
+    padding: 30px;
+}
+
+
+/* nav*/
+
+.nav {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    color: var(--primary-color);
+    margin: 0 10px;
+    clear: both;
+}
+
+.menu a:hover {
+    color: var(--button-hover-color);
+}
+
+label {
+    display: none;
+    cursor: pointer;
+    font: 26px;
+    width: 26px;
+    margin: 0 auto;
+}
+
+#toggle {
+    display: none;
+}
+
+@media all and (max-width:500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        margin: 20px;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+.products {
+    max-width: 1300px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 270px);
+    justify-content: center;
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 40px 40px;
+    background-color: var(--items-bg-color);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.item-thumbnail {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-title {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**/
+
+.dropup {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    width: 100px;
+    z-index: 1;
+    font-size: small;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.status {
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.status-in {
+    color: green;
+}
+
+.status-out {
+    color: red;
+    text-decoration: line-through;
+}
+
+.btn-purchase-container {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: auto 10px 10px auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--button-color);
+    color: var(--alt-color) !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-purchase-container:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+}
+
+
+/* Modal */
+
+
+/*modal background*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*modal box*/
+
+.modal-content {
+    background-color: var(--primary-color);
+    margin: 15% auto;
+    color: var(--alt-color);
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid var(--items-bg-color);
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.hl {
+    border-bottom: 4px solid var(--primary-color);
+    width: 50%;
+}
+
+
+/*close button*/
+
+.close {
+    color: var(--button-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--button-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.links span {
+    display: flex;
+    align-items: flex-start;
+}
+
+.buy-btn {
+    background-color: var(--button-color);
+    color: var(--alt-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+/*End modal*/
+
+.btn-share-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.btn-share-container:hover {
+    cursor: pointer;
+}
+
+.copy .popuptext {
+    display: none;
+    width: 100px;
+    color: var(--primary-color);
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+    left: 70%;
+    margin-left: 50%
+}
+
+
+/* hide and show the popup */
+
+.copy .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+/* fade in the popup */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*filter product*/
+
+.filter-btn-container {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--button-color);
+    color: var(--alt-color);
+    cursor: pointer;
+    margin: 3px;
+}
+
+.show {
+    background-color: var(--highlight-color);
+}
+
+.filter-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--alt-color);
+}
+
+.contact-container {
+    text-align: center;
+    background-color: var(--button-color);
+    color: var(--alt-color);
+    padding: 50px;
+}
+
+.contact-container a {
+    color: var(--items-bg-color);
+    font-size: 1.3em;
+}
+
+.contact-container a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.footer-container {
+    padding: 30px;
+    background-color: var(--footer-bg-color);
+}
+
+.footer {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr;
+    justify-content: space-around;
+    column-gap: 20px;
+    margin: 0 auto;
+}
+
+.how-list {
+    margin: 20px;
+}
+
+.terms-list {
+    margin: 20px;
+}
+
+.connect-list {
+    list-style: none;
+    display: flex;
+}
+
+.connect-list li {
+    margin: 20px 20px 0 0;
+}
+
+.discord-ctn,
+.telegram-ctn,
+.twitter-ctn {
+    width: 34px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: var(--button-color);
+}
+
+.fab {
+    color: var(--footer-bg-color);
+}
+
+.discord-ctn:hover,
+.telegram-ctn:hover,
+.twitter-ctn:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+/*Responsive Design*/
+
+@media all and (max-width: 980px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media all and (max-width: 736px) {
+    body {
+        font-size: 0.9em;
+    }
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .nav-list {
+        display: block;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+        margin: 0;
+        padding: 10px;
+    }
+    .btn-share-container {
+        width: 20px;
+        height: 20px;
+    }
+    .dropup-content {
+        bottom: 80px;
+        width: 75px;
+        font-size: 0.7em;
+    }
+    .how-list,
+    .terms-list {
+        margin: 10px;
+    }
+    .connect-list li {
+        margin: 10px 15px 10px 0;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
