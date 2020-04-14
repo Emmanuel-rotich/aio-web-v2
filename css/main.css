@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 30px;
+}
+
 .header {
     margin: 0 auto;
     background-color: var(--items-bg-color);
@@ -72,30 +76,12 @@ label {
     display: none;
 }
 
-@media all and (max-width:500px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        display: none;
-        width: 100%;
-    }
-    .menu a {
-        display: block;
-        margin: 20px;
-    }
-    #toggle:checked+.menu {
-        display: block;
-    }
-}
-
 .products {
     max-width: 1300px;
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-rows: repeat(4, 270px);
     justify-content: center;
     grid-gap: 20px;
     padding: 40px;
@@ -470,7 +456,6 @@ label {
     }
     .products {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
         margin: 0;
         padding: 10px;
     }
@@ -492,5 +477,24 @@ label {
     }
     .footer {
         grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width:500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        margin: 20px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+    #toggle:checked+.menu {
+        display: block;
     }
 }
