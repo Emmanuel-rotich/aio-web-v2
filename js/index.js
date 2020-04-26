@@ -134,6 +134,18 @@ function copyPopup() {
     copyBtn[19].onclick = function() {
         popup[19].style.display = "block";
     }
+    copyBtn[20].onclick = function() {
+        popup[20].style.display = "block";
+    }
+    copyBtn[21].onclick = function() {
+        popup[21].style.display = "block";
+    }
+    copyBtn[22].onclick = function() {
+        popup[22].style.display = "block";
+    }
+    copyBtn[23].onclick = function() {
+        popup[23].style.display = "block";
+    }
 
 }
 
@@ -218,6 +230,18 @@ btnPurchase[18].onclick = function() {
 btnPurchase[19].onclick = function() {
     modal[19].style.display = "block";
 }
+btnPurchase[20].onclick = function() {
+    modal[20].style.display = "block";
+}
+btnPurchase[21].onclick = function() {
+    modal[21].style.display = "block";
+}
+btnPurchase[22].onclick = function() {
+    modal[22].style.display = "block";
+}
+btnPurchase[23].onclick = function() {
+    modal[23].style.display = "block";
+}
 
 // When user clicks on <span> (x), close modal
 span[0].onclick = function() {
@@ -290,6 +314,18 @@ span[18].onclick = function() {
 span[19].onclick = function() {
     modal[19].style.display = "none";
 }
+span[20].onclick = function() {
+    modal[20].style.display = "none";
+}
+span[21].onclick = function() {
+    modal[21].style.display = "none";
+}
+span[22].onclick = function() {
+    modal[22].style.display = "none";
+}
+span[23].onclick = function() {
+    modal[23].style.display = "none";
+}
 
 // When user clicks anywhere outside of the modal, close it
 
@@ -361,5 +397,17 @@ window.addEventListener("click", function(event) {
     }
     if (event.target == modal[19]) {
         modal[19].style.display = "none";
+    }
+    if (event.target == modal[20]) {
+        modal[20].style.display = "none";
+    }
+    if (event.target == modal[21]) {
+        modal[21].style.display = "none";
+    }
+    if (event.target == modal[22]) {
+        modal[22].style.display = "none";
+    }
+    if (event.target == modal[23]) {
+        modal[23].style.display = "none";
     }
 })
