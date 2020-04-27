@@ -412,8 +412,7 @@ label {
 }
 
 .discord-ctn,
-.telegram-ctn,
-.twitter-ctn {
+.telegram-ctn {
     width: 34px;
     padding: 2px;
     border-radius: 5px;
@@ -436,8 +435,7 @@ label {
 @media all and (max-width: 980px) {
     .products {
         grid-template-columns: repeat(4, 1fr);
-        /grid-template-rows: repeat(3, 1fr);
-        grid-auto-rows: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
 }
 
