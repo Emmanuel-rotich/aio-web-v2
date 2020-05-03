@@ -146,6 +146,9 @@ function copyPopup() {
     copyBtn[23].onclick = function() {
         popup[23].style.display = "block";
     }
+    copyBtn[24].onclick = function() {
+        popup[24].style.display = "block";
+    }
 
 }
 
@@ -242,6 +245,9 @@ btnPurchase[22].onclick = function() {
 btnPurchase[23].onclick = function() {
     modal[23].style.display = "block";
 }
+btnPurchase[24].onclick = function() {
+    modal[24].style.display = "block";
+}
 
 // When user clicks on <span> (x), close modal
 span[0].onclick = function() {
@@ -326,6 +332,9 @@ span[22].onclick = function() {
 span[23].onclick = function() {
     modal[23].style.display = "none";
 }
+span[24].onclick = function() {
+    modal[24].style.display = "none";
+}
 
 // When user clicks anywhere outside of the modal, close it
 
@@ -409,5 +418,8 @@ window.addEventListener("click", function(event) {
     }
     if (event.target == modal[23]) {
         modal[23].style.display = "none";
+    }
+    if (event.target == modal[24]) {
+        modal[24].style.display = "none";
     }
 })
